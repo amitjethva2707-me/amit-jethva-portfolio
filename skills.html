@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.bg-tech-grid{background-size:48px 48px;background-image:linear-gradient(to right,#E7E3DB 1px,transparent 1px),linear-gradient(to bottom,#E7E3DB 1px,transparent 1px);}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#313030", "text-primary": "#171717", "tertiary-fixed-dim": "#6cd4f1", "tertiary-fixed": "#b0ecff", "text-secondary": "#5F5B55", "text-muted": "#8A857D", "grid-line": "#E7E3DB", "border": "#D8D4CC", "accent": "#D85C36", "on-error": "#ffffff", "surface-container-highest": "#e5e2e1", "on-primary-container": "#fffbff", "on-background": "#1c1b1b", "inverse-primary": "#ffb59f", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "on-surface": "#1c1b1b", "outline": "#8b716a", "primary-container": "#c54e2a", "on-surface-variant": "#58423b", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#004e5e", "primary-fixed-dim": "#ffb59f", "surface-container-lowest": "#ffffff", "on-secondary-container": "#66625c", "tertiary-container": "#008098", "surface-variant": "#e5e2e1", "tertiary": "#006579", "surface-dim": "#dcd9d9", "primary": "#a43713", "error-container": "#ffdad6", "secondary-container": "#e5dfd7", "surface-container": "#f0eded", "on-tertiary-container": "#f9fdff", "secondary-fixed-dim": "#ccc6be", "primary-fixed": "#ffdbd1", "on-secondary-fixed-variant": "#4a4641", "on-error-container": "#93000a", "surface-container-low": "#f6f3f2", "surface": "#FFFFFF", "on-primary-fixed": "#3a0a00", "background": "#F5F3EE", "inverse-on-surface": "#f3f0ef", "surface-muted": "#EAE7DF", "error": "#ba1a1a", "secondary": "#625e58", "surface-container-high": "#eae7e7", "outline-variant": "dfc0b7", "on-primary-fixed-variant": "#862200", "accent-dark": "#A94327", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#001f27", "surface-tint": "#a73916", "on-secondary-fixed": "#1e1b17", "secondary-fixed": "#e8e1da" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1rem", "gutter-desktop": "2rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin": "1rem", "space-xl": "2rem", "space-md": "1rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-lg": ["Space Grotesk"], "mono-meta": ["JetBrains Mono"], "display-hero": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "mono-label": ["JetBrains Mono"], "body-lg": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "mono-code": ["JetBrains Mono"], "headline-sm": ["Space Grotesk"], "body-md": ["Inter"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "mono-meta": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "mono-label": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "mono-code": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-background font-body-md text-text-primary min-h-screen relative flex flex-col"><div class="fixed inset-0 bg-tech-grid pointer-events-none opacity-60 z-0"></div><header class="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-[0_1px_8px_rgba(23,23,23,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-3"><a class="flex items-center gap-3 group" data-path="home" href="#"><span class="w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center font-mono-label text-mono-label text-accent font-semibold group-hover:border-accent transition-colors shadow-[1px_1px_0px_rgba(23,23,23,0.06)]">AJ</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-text-primary leading-none">Amit Jethva</span><span class="font-mono-meta text-mono-meta text-text-muted mt-1 hidden sm:block">// STUDENT.DEVELOPER() · AHMEDABAD, IN</span></div></a></div><nav class="hidden xl:flex items-center gap-1 p-1 bg-surface-muted/60 border border-border rounded-xl" data-active-classes="bg-accent text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="home" href="#">01. Home</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="about" href="#">02. About</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="projects" href="#">03. Projects</a><a aria-current="page" class="px-3 py-1.5 transition-all bg-accent text-on-primary font-semibold rounded-lg shadow-sm" data-path="skills" href="#">04. Skills</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="proof-of-work" href="#">05. Proof</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="education" href="#">06. Education</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="achievements" href="#">07. Achievements</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="contact" href="#">08. Contact</a></nav><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 px-2.5 py-1 rounded-lg bg-surface border border-border"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span><span class="font-mono-meta text-mono-meta text-text-secondary">STATUS: OPEN TO WORK</span></div><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-text-primary font-mono-label text-mono-label hover:bg-surface-muted hover:border-text-primary transition-all shadow-[1px_1px_0px_rgba(23,23,23,0.06)]" href="#">Resume ↓</a><button aria-label="Toggle Mobile Menu" class="xl:hidden w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center text-text-primary hover:bg-surface-muted transition-colors" id="drawer-toggle"><span class="material-symbols-outlined text-[20px]">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-border shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1Ut7F9abNadabvXPPPkG45QwDM4Rz13pH47E9dY74CjmZpr5vuXBEVukEFreJelhgSC5EjCN4lbOCwC8ugEHpHqjTa0XNCdN-hhgyZL8QttIrZGtxCRercWDPR7lIAm2Vm5KvS1ZoKhJ5C16xYQkkddRvtmVwsw5SwQgfmHcQRX2sRgbjA4bXcXu5vveFd6r-Zv66JwEFz_nQAFUgiVTNByNOwaaTta5BuZF4HxcEpfa_OPIjyfbFVjtZbMPqpA6U3b0plva_Wd"/></div></div><div class="hidden xl:hidden border-t border-border bg-surface px-margin-tablet py-space-md shadow-md" id="mobile-drawer"><div class="flex flex-col gap-2" data-active-classes="bg-accent text-on-primary font-semibold rounded-lg"><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="home" href="#">01. Home</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="about" href="#">02. About</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="projects" href="#">03. Projects</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="skills" href="#">04. Skills</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="proof-of-work" href="#">05. Proof of Work</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="education" href="#">06. Education</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="achievements" href="#">07. Achievements</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="contact" href="#">08. Contact</a></div><div class="mt-4 pt-4 border-t border-border flex flex-col gap-3"><div class="flex items-center gap-2 px-2 py-1 rounded bg-surface-muted border border-border"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span><span class="font-mono-meta text-mono-meta text-text-secondary">STATUS: OPEN TO WORK</span></div><a class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-surface-muted border border-border text-text-primary font-mono-label text-mono-label" href="#">Download Resume ↓</a></div></div></header><main class="relative z-10 w-full pt-16 flex-1 bg-transparent"><div class="flex flex-col w-full">
+<!-- Interactive Stack Filter & Workbench Meta Bar -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg">
+<!-- Top Monospace Tracking Breadcrumb -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-space-sm border-b border-border text-mono-meta font-mono-meta text-text-muted">
+<div class="flex items-center gap-2">
+<span class="text-accent font-semibold">04. SKILLS</span>
+<span>//</span>
+<span class="tracking-wider">TECHNICAL STACK · CONTINUOUSLY REFINED</span>
+</div>
+<div class="flex items-center gap-4 text-mono-label font-mono-label">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>4 DOMAINS</span>
+<span class="text-border">|</span>
+<span>19 VERIFIED MODULES</span>
+<span class="text-border">|</span>
+<span class="text-text-secondary">v2026.04_LATEST</span>
+</div>
+</div>
+<!-- Editorial Header Block -->
+<div class="py-space-xl flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface border border-border font-mono-meta text-mono-meta text-text-secondary mb-3 shadow-[1px_1px_0px_rgba(23,23,23,0.05)]">
+<span class="material-symbols-outlined text-[14px] text-accent">terminal</span>
+<span>SYSTEM_CAPABILITIES_MANIFEST</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-text-primary tracking-tight leading-none">
+          Technologies &amp; Tools
+        </h1>
+<p class="font-body-lg text-body-lg text-text-secondary mt-3">
+          A verified inventory of programming languages, machine learning libraries, web technologies, and developer tooling.
+        </p>
+</div>
+<!-- Quick Filter Chips for Ergonomic Navigation -->
+<div class="flex flex-wrap items-center gap-2 font-mono-label text-mono-label">
+<button class="stack-filter-btn px-3 py-1.5 rounded bg-accent text-on-primary font-semibold transition-all" id="btn-all" onclick="filterDomain('all')">
+          [ALL (19)]
+        </button>
+<button class="stack-filter-btn px-3 py-1.5 rounded bg-surface border border-border text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all" id="btn-lang" onclick="filterDomain('lang')">
+          01. LANGUAGES
+        </button>
+<button class="stack-filter-btn px-3 py-1.5 rounded bg-surface border border-border text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all" id="btn-ml" onclick="filterDomain('ml')">
+          02. ML / DATA
+        </button>
+<button class="stack-filter-btn px-3 py-1.5 rounded bg-surface border border-border text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all" id="btn-web" onclick="filterDomain('web')">
+          03. WEB
+        </button>
+<button class="stack-filter-btn px-3 py-1.5 rounded bg-surface border border-border text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all" id="btn-tools" onclick="filterDomain('tools')">
+          04. TOOLS
+        </button>
+</div>
+</div>
+</section>
+<!-- Content Grid: Technical Workbench Layout -->
+<main class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop pb-space-xl space-y-space-xl">
+<!-- 01. PROGRAMMING LANGUAGES -->
+<section class="domain-section flex flex-col gap-4" id="sec-lang">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2 border-b border-border">
+<div class="flex items-center gap-3">
+<span class="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">01</span>
+<h2 class="font-headline-md text-headline-md text-text-primary">Programming Languages</h2>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">CORE RUNTIMES &amp; FOUNDATIONAL PARADIGMS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- C -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)] group">
+<div>
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">ID: PL_01</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-2 py-0.5 rounded">SYSTEMS</span>
+</div>
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label font-bold text-text-primary group-hover:bg-accent group-hover:text-on-primary transition-colors">C</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">C</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4">
+              Low-level memory management, pointers, and foundational computer architecture understanding.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 space-y-2">
+<div class="flex justify-between items-center font-mono-meta text-mono-meta">
+<span class="text-text-muted">PROFICIENCY</span>
+<span class="text-text-primary font-medium">85% // SOLID</span>
+</div>
+<div class="w-full h-1.5 bg-surface-muted rounded overflow-hidden">
+<div class="h-full bg-text-primary rounded w-[85%]"></div>
+</div>
+<span class="inline-block font-mono-meta text-mono-meta text-text-muted pt-1">SCOPE: Pointer arithmetic, POSIX, memory safety</span>
+</div>
+</div>
+<!-- C++ -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)] group">
+<div>
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">ID: PL_02</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-2 py-0.5 rounded">DSA / PERF</span>
+</div>
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label font-bold text-text-primary group-hover:bg-accent group-hover:text-on-primary transition-colors">C++</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">C++</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4">
+              High-performance algorithms, competitive programming, object-oriented systems, and STL container mastery.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 space-y-2">
+<div class="flex justify-between items-center font-mono-meta text-mono-meta">
+<span class="text-text-muted">PROFICIENCY</span>
+<span class="text-text-primary font-medium">92% // ADVANCED</span>
+</div>
+<div class="w-full h-1.5 bg-surface-muted rounded overflow-hidden">
+<div class="h-full bg-accent rounded w-[92%]"></div>
+</div>
+<span class="inline-block font-mono-meta text-mono-meta text-text-muted pt-1">SCOPE: STL, Templates, OOP, LeetCode 400+</span>
+</div>
+</div>
+<!-- Python -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)] group">
+<div>
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">ID: PL_03</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-2 py-0.5 rounded">PRIMARY</span>
+</div>
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label font-bold text-text-primary group-hover:bg-accent group-hover:text-on-primary transition-colors">Py</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Python</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4">
+              Data processing, ML modeling, automated scripting, ETL pipeline creation, and computational analysis.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 space-y-2">
+<div class="flex justify-between items-center font-mono-meta text-mono-meta">
+<span class="text-text-muted">PROFICIENCY</span>
+<span class="text-text-primary font-medium">95% // CORE RIG</span>
+</div>
+<div class="w-full h-1.5 bg-surface-muted rounded overflow-hidden">
+<div class="h-full bg-accent rounded w-[95%]"></div>
+</div>
+<span class="inline-block font-mono-meta text-mono-meta text-text-muted pt-1">SCOPE: Py3.11+, Vectorization, ML Pipelines</span>
+</div>
+</div>
+<!-- JavaScript -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)] group">
+<div>
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">ID: PL_04</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-2 py-0.5 rounded">CLIENT/ASYNC</span>
+</div>
+<div class="flex items-center gap-2.5 mb-2">
+<span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label font-bold text-text-primary group-hover:bg-accent group-hover:text-on-primary transition-colors">JS</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">JavaScript</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4">
+              Modern ECMAScript standards, asynchronous control flows, event-driven interfaces, and DOM lifecycles.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 space-y-2">
+<div class="flex justify-between items-center font-mono-meta text-mono-meta">
+<span class="text-text-muted">PROFICIENCY</span>
+<span class="text-text-primary font-medium">88% // PROFICIENT</span>
+</div>
+<div class="w-full h-1.5 bg-surface-muted rounded overflow-hidden">
+<div class="h-full bg-text-primary rounded w-[88%]"></div>
+</div>
+<span class="inline-block font-mono-meta text-mono-meta text-text-muted pt-1">SCOPE: ES6+, Promises, Web APIs, DOM</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 02. ML / DATA -->
+<section class="domain-section flex flex-col gap-4" id="sec-ml">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2 border-b border-border">
+<div class="flex items-center gap-3">
+<span class="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">02</span>
+<h2 class="font-headline-md text-headline-md text-text-primary">ML / Data Engineering &amp; Analytics</h2>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">STATISTICAL MODELING, FEATURE EXTRACTION &amp; EDA</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- NumPy -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60 font-mono-meta text-mono-meta text-text-muted">
+<span>MODULE // 02.1</span>
+<span class="text-text-primary">N-DIM ARRAYS</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">view_module</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">NumPy</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              High-throughput multidimensional arrays, tensor slicing, linear algebraic transformations, and vectorization.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta space-y-1">
+<div class="text-text-muted">USE CASE: Matrix decomposition</div>
+<div class="text-text-secondary font-medium">status: ACTIVE_IN_RESEARCH</div>
+</div>
+</div>
+<!-- Pandas -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60 font-mono-meta text-mono-meta text-text-muted">
+<span>MODULE // 02.2</span>
+<span class="text-text-primary">DATA FRAMES</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">table_rows</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Pandas</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Tabular feature engineering, categorical aggregation, missing-value imputation, and multi-indexed query routines.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta space-y-1">
+<div class="text-text-muted">USE CASE: Cybercrime telemetry ETL</div>
+<div class="text-text-secondary font-medium">status: PRODUCTION_USE</div>
+</div>
+</div>
+<!-- Matplotlib -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60 font-mono-meta text-mono-meta text-text-muted">
+<span>MODULE // 02.3</span>
+<span class="text-text-primary">PLOTTING</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">show_chart</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Matplotlib</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Fine-grained canvas construction, multi-panel diagnostic visualizations, error-band tracking, and loss curves.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta space-y-1">
+<div class="text-text-muted">USE CASE: Model convergence telemetry</div>
+<div class="text-text-secondary font-medium">status: ACTIVE_IN_RESEARCH</div>
+</div>
+</div>
+<!-- Seaborn -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60 font-mono-meta text-mono-meta text-text-muted">
+<span>MODULE // 02.4</span>
+<span class="text-text-primary">STATS_VIZ</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">bubble_chart</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Seaborn</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Exploratory data analysis, correlation heatmaps, bivariate distribution modeling, and aesthetic distribution estimation.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta space-y-1">
+<div class="text-text-muted">USE CASE: Feature correlation matrix</div>
+<div class="text-text-secondary font-medium">status: ANALYTICS_READY</div>
+</div>
+</div>
+<!-- Scikit-learn -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60 font-mono-meta text-mono-meta text-text-muted">
+<span>MODULE // 02.5</span>
+<span class="text-accent font-semibold">CORE_ESTIMATOR</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Scikit-learn</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Predictive model training, cross-validation tuning, classification ensembles (Random Forest, SVM, Regression metrics).
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta space-y-1">
+<div class="text-text-muted">USE CASE: Classifier benchmarks</div>
+<div class="text-text-secondary font-medium">status: PRODUCTION_USE</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 03. WEB DEVELOPMENT -->
+<section class="domain-section flex flex-col gap-4" id="sec-web">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2 border-b border-border">
+<div class="flex items-center gap-3">
+<span class="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">03</span>
+<h2 class="font-headline-md text-headline-md text-text-primary">Web Development</h2>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">REACTIVE ARCHITECTURES, CLIENT SYSTEMS &amp; CLOUD SYNC</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- React -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">WEB_01</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-1.5 py-0.5 rounded">UI FRAMEWORK</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">deployed_code</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">React</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Component-based architectures, unidirectional reactive state, custom hooks, and virtualized dashboards.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 font-mono-meta text-mono-meta flex items-center justify-between">
+<span class="text-text-muted">HOOKS / SPA</span>
+<span class="text-text-primary font-medium">ADVANCED</span>
+</div>
+</div>
+<!-- Tailwind CSS -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">WEB_02</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">SYSTEMS</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">style</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Tailwind CSS</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Design system tokenization, fluid typography scales, bespoke grid implementations, and strict responsive hygiene.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 font-mono-meta text-mono-meta flex items-center justify-between">
+<span class="text-text-muted">UTILITY / THEMES</span>
+<span class="text-text-primary font-medium">ADVANCED</span>
+</div>
+</div>
+<!-- HTML -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">WEB_03</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">SEMANTICS</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">code</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">HTML</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Strict semantic structuring, accessibility compliance (WCAG standards), SEO schema, and robust document layouts.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 font-mono-meta text-mono-meta flex items-center justify-between">
+<span class="text-text-muted">HTML5 SPECS</span>
+<span class="text-text-primary font-medium">EXPERT</span>
+</div>
+</div>
+<!-- CSS -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">WEB_04</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">LAYOUT</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">css</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">CSS</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Complex flexbox arrangements, 12-column CSS subgrids, CSS custom properties, and performant hardware-accelerated animations.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 font-mono-meta text-mono-meta flex items-center justify-between">
+<span class="text-text-muted">CSS3 / SUBGRID</span>
+<span class="text-text-primary font-medium">EXPERT</span>
+</div>
+</div>
+<!-- Firebase -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">WEB_05</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-1.5 py-0.5 rounded">BACKEND/BAAS</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">cloud_sync</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Firebase</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Authentication systems, Firestore real-time synchronization, edge hosting rules, and security rule authoring.
+            </p>
+</div>
+<div class="pt-3 border-t border-border/60 font-mono-meta text-mono-meta flex items-center justify-between">
+<span class="text-text-muted">FIRESTORE / AUTH</span>
+<span class="text-text-primary font-medium">PROFICIENT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. TOOLS & OTHERS (Developer Workbench) -->
+<section class="domain-section flex flex-col gap-4" id="sec-tools">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-2 border-b border-border">
+<div class="flex items-center gap-3">
+<span class="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">04</span>
+<h2 class="font-headline-md text-headline-md text-text-primary">Tools &amp; Developer Workbench</h2>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">VERSION CONTROL, UNIX ENVIRONMENT &amp; INTERFACE DESIGN</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Git -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">DEV_01</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-1.5 py-0.5 rounded">VCS</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">fork_left</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Git</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Atomic commit hygiene, branching topologies, interactive rebasing, merge conflict triage, and bisect debugging.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta">
+<span class="text-text-muted block">CLI WORKFLOW</span>
+<span class="text-text-primary font-medium">Rebase, Cherry-pick, Hooks</span>
+</div>
+</div>
+<!-- GitHub -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">DEV_02</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">COLLAB</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">GitHub</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Remote repository governance, pull request reviews, project board automation, and continuous integration workflows.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta">
+<span class="text-text-muted block">PORTFOLIO SYNC</span>
+<span class="text-text-primary font-medium">300+ Annual Contributions</span>
+</div>
+</div>
+<!-- VS Code -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">DEV_03</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">IDE</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">VS Code</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Tailored workspace profiles, multi-root debugging configs, ESLint/Prettier format-on-save pipelines, and SSH remotes.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta">
+<span class="text-text-muted block">INTEGRATION</span>
+<span class="text-text-primary font-medium">WSL2 / Clang / Python envs</span>
+</div>
+</div>
+<!-- Linux -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">DEV_04</span>
+<span class="font-mono-label text-mono-label text-accent bg-accent/10 px-1.5 py-0.5 rounded">OS / KERNEL</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">memory</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Linux</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              POSIX shell scripting, file permission management, process monitoring via htop/systemd, and package compilation.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta">
+<span class="text-text-muted block">ENVIRONMENTS</span>
+<span class="text-text-primary font-medium">Ubuntu / Debian / Bash</span>
+</div>
+</div>
+<!-- Figma -->
+<div class="bg-surface border border-border rounded-xl p-5 hover:border-accent transition-colors flex flex-col justify-between shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-border/60">
+<span class="font-mono-meta text-mono-meta text-text-muted">DEV_05</span>
+<span class="font-mono-label text-mono-label text-text-secondary bg-surface-muted px-1.5 py-0.5 rounded">UI / UX</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent text-[20px]">draw</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Figma</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-3">
+              Wireframing, interactive prototyping, layout grid specs, auto-layout structuring, and technical design handoffs.
+            </p>
+</div>
+<div class="bg-surface-muted/60 p-2.5 rounded-lg border border-border/60 font-mono-meta text-mono-meta">
+<span class="text-text-muted block">SYSTEM DESIGN</span>
+<span class="text-text-primary font-medium">Components &amp; Auto-Layout</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Inspection / Metric Breakdown Panel -->
+<section class="bg-surface border border-border rounded-xl p-6 shadow-[2px_2px_0px_rgba(23,23,23,0.04)]">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-border">
+<div>
+<span class="font-mono-meta text-mono-meta text-accent uppercase tracking-wider font-semibold">// WORKBENCH TELEMETRY</span>
+<h3 class="font-headline-md text-headline-md text-text-primary mt-1">Proficiency &amp; Utilization Matrix</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Practical distribution of tools utilized across production software and academic investigations.</p>
+</div>
+<div class="flex items-center gap-6 font-mono-meta text-mono-meta text-text-secondary">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-accent"></span>
+<span>CORE APPLIED (Daily)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-text-primary"></span>
+<span>SYSTEM RUNTIME (Active)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-border"></span>
+<span>INTEGRATION TOOLS</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Metrics Visual Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 pt-6">
+<div class="p-4 rounded-lg bg-surface-muted border border-border">
+<span class="font-mono-meta text-mono-meta text-text-muted block mb-1">[01] ALGORITHMIC VELOCITY</span>
+<div class="font-headline-lg text-headline-lg text-text-primary font-semibold">C++ &amp; Py</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Primary engines for competitive problem solving and mathematical computations.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-muted border border-border">
+<span class="font-mono-meta text-mono-meta text-text-muted block mb-1">[02] PIPELINE THROUGHPUT</span>
+<div class="font-headline-lg text-headline-lg text-text-primary font-semibold">Scikit + Pd</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Zero-copy transformations, feature matrices, and evaluation protocols.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-muted border border-border">
+<span class="font-mono-meta text-mono-meta text-text-muted block mb-1">[03] APPLICATION SHELL</span>
+<div class="font-headline-lg text-headline-lg text-text-primary font-semibold">React + TW</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Performant stateful dashboards with precise typographic rhythm.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-muted border border-border">
+<span class="font-mono-meta text-mono-meta text-text-muted block mb-1">[04] SYSTEM ENVIRONMENT</span>
+<div class="font-headline-lg text-headline-lg text-text-primary font-semibold">Unix / Git</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">Reproducible shell pipelines, remote nodes, and strict branch discipline.</p>
+</div>
+</div>
+</section>
+<!-- Bottom Technical Note / Verification Stamp -->
+<section class="border border-border rounded-xl bg-surface-muted/70 p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-accent text-[22px] mt-0.5">verified_user</span>
+<div class="space-y-1">
+<div class="font-mono-label text-mono-label font-semibold text-text-primary">
+            VERIFIED PROFICIENCY AUDIT
+          </div>
+<p class="font-body-md text-body-md text-text-secondary">
+            Note: This inventory represents verified proficiencies actively utilized in projects and problem solving. Continually expanding into advanced distributed systems.
+          </p>
+</div>
+</div>
+<a class="whitespace-nowrap px-4 py-2 rounded-lg bg-surface border border-border text-text-primary font-mono-label text-mono-label hover:bg-surface-muted hover:border-accent transition-all shadow-[1px_1px_0px_rgba(23,23,23,0.06)] flex items-center gap-2" data-path="projects" href="#">
+<span>Inspect Projects</span>
+<span class="text-accent font-bold">→</span>
+</a>
+</section>
+</main>
+<!-- Interactive JavaScript for filtering sections without page reloads -->
+<script>
+    function filterDomain(domainKey) {
+      const sections = {
+        lang: document.getElementById('sec-lang'),
+        ml: document.getElementById('sec-ml'),
+        web: document.getElementById('sec-web'),
+        tools: document.getElementById('sec-tools')
+      };
+
+      const buttons = {
+        all: document.getElementById('btn-all'),
+        lang: document.getElementById('btn-lang'),
+        ml: document.getElementById('btn-ml'),
+        web: document.getElementById('btn-web'),
+        tools: document.getElementById('btn-tools')
+      };
+
+      // Reset all buttons to default state
+      Object.keys(buttons).forEach(key => {
+        const btn = buttons[key];
+        if (btn) {
+          btn.className = 'stack-filter-btn px-3 py-1.5 rounded bg-surface border border-border text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all';
+        }
+      });
+
+      // Highlight active button
+      if (buttons[domainKey]) {
+        buttons[domainKey].className = 'stack-filter-btn px-3 py-1.5 rounded bg-accent text-on-primary font-semibold transition-all shadow-sm';
+      }
+
+      // Toggle display
+      if (domainKey === 'all') {
+        Object.values(sections).forEach(sec => {
+          if (sec) sec.classList.remove('hidden');
+        });
+      } else {
+        Object.keys(sections).forEach(key => {
+          const sec = sections[key];
+          if (sec) {
+            if (key === domainKey) {
+              sec.classList.remove('hidden');
+            } else {
+              sec.classList.add('hidden');
+            }
+          }
+        });
+      }
+    }
+  </script>
+</div></main><footer class="relative z-10 w-full bg-surface border-t border-border mt-space-xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg pb-space-lg border-b border-border"><div class="md:col-span-4 flex flex-col gap-2"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label text-accent font-semibold">AJ</span><span class="font-headline-sm text-headline-sm text-text-primary">Amit Jethva</span></div><p class="font-mono-meta text-mono-meta text-text-muted mt-1">Computer Engineering · L.D.C.E. Ahmedabad</p><p class="font-body-sm text-body-sm text-text-secondary mt-2">Technical workbench, experimental prototypes, and systems engineering log.</p></div><div class="md:col-span-4 flex flex-col justify-center items-start md:items-center text-left md:text-center"><span class="font-mono-meta text-mono-meta text-text-muted mb-1">[SYS_STATUS // V2.6.4]</span><p class="font-body-md text-body-md text-text-secondary italic">"Built with passion. Always a work in progress."</p></div><div class="md:col-span-4 flex flex-col md:items-end gap-3"><span class="font-mono-meta text-mono-meta text-text-muted uppercase tracking-wider">Navigation Index</span><div class="grid grid-cols-2 gap-x-6 gap-y-1.5 text-left md:text-right" data-active-classes="text-accent font-semibold"><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="home" href="#">01. Home</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="about" href="#">02. About</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="projects" href="#">03. Projects</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="skills" href="#">04. Skills</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="proof-of-work" href="#">05. Proof</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="education" href="#">06. Education</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="achievements" href="#">07. Achievements</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="contact" href="#">08. Contact</a></div><a class="inline-flex items-center gap-1 font-mono-label text-mono-label text-accent hover:underline mt-2" href="#">↑ Back to top</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-meta text-mono-meta text-text-muted"><div>© 2026 Amit Jethva. All rights reserved.</div><div class="flex items-center gap-4"><span>LAT: 23.0338° N</span><span>LON: 72.5463° E</span><span>REF: 48PX_GRID</span></div></div></div></footer><script>const toggle = document.getElementById('drawer-toggle'); const drawer = document.getElementById('mobile-drawer'); if(toggle && drawer){ toggle.addEventListener('click', () => { drawer.classList.toggle('hidden'); }); }</script></body></html>

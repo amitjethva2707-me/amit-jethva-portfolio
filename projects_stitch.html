@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.bg-tech-grid{background-size:48px 48px;background-image:linear-gradient(to right,#E7E3DB 1px,transparent 1px),linear-gradient(to bottom,#E7E3DB 1px,transparent 1px);}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#313030", "text-primary": "#171717", "tertiary-fixed-dim": "#6cd4f1", "tertiary-fixed": "#b0ecff", "text-secondary": "#5F5B55", "text-muted": "#8A857D", "grid-line": "#E7E3DB", "border": "#D8D4CC", "accent": "#D85C36", "on-error": "#ffffff", "surface-container-highest": "#e5e2e1", "on-primary-container": "#fffbff", "on-background": "#1c1b1b", "inverse-primary": "#ffb59f", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "on-surface": "#1c1b1b", "outline": "#8b716a", "primary-container": "#c54e2a", "on-surface-variant": "#58423b", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#004e5e", "primary-fixed-dim": "#ffb59f", "surface-container-lowest": "#ffffff", "on-secondary-container": "#66625c", "tertiary-container": "#008098", "surface-variant": "#e5e2e1", "tertiary": "#006579", "surface-dim": "#dcd9d9", "primary": "#a43713", "error-container": "#ffdad6", "secondary-container": "#e5dfd7", "surface-container": "#f0eded", "on-tertiary-container": "#f9fdff", "secondary-fixed-dim": "#ccc6be", "primary-fixed": "#ffdbd1", "on-secondary-fixed-variant": "#4a4641", "on-error-container": "#93000a", "surface-container-low": "#f6f3f2", "surface": "#FFFFFF", "on-primary-fixed": "#3a0a00", "background": "#F5F3EE", "inverse-on-surface": "#f3f0ef", "surface-muted": "#EAE7DF", "error": "#ba1a1a", "secondary": "#625e58", "surface-container-high": "#eae7e7", "outline-variant": "dfc0b7", "on-primary-fixed-variant": "#862200", "accent-dark": "#A94327", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#001f27", "surface-tint": "#a73916", "on-secondary-fixed": "#1e1b17", "secondary-fixed": "#e8e1da" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1rem", "gutter-desktop": "2rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin": "1rem", "space-xl": "2rem", "space-md": "1rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-lg": ["Space Grotesk"], "mono-meta": ["JetBrains Mono"], "display-hero": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "mono-label": ["JetBrains Mono"], "body-lg": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "mono-code": ["JetBrains Mono"], "headline-sm": ["Space Grotesk"], "body-md": ["Inter"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "mono-meta": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "mono-label": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "mono-code": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-background font-body-md text-text-primary min-h-screen relative flex flex-col"><div class="fixed inset-0 bg-tech-grid pointer-events-none opacity-60 z-0"></div><header class="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-[0_1px_8px_rgba(23,23,23,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-3"><a class="flex items-center gap-3 group" data-path="home" href="#"><span class="w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center font-mono-label text-mono-label text-accent font-semibold group-hover:border-accent transition-colors shadow-[1px_1px_0px_rgba(23,23,23,0.06)]">AJ</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-text-primary leading-none">Amit Jethva</span><span class="font-mono-meta text-mono-meta text-text-muted mt-1 hidden sm:block">// STUDENT.DEVELOPER() · AHMEDABAD, IN</span></div></a></div><nav class="hidden xl:flex items-center gap-1 p-1 bg-surface-muted/60 border border-border rounded-xl" data-active-classes="bg-accent text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="home" href="#">01. Home</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="about" href="#">02. About</a><a aria-current="page" class="px-3 py-1.5 transition-all bg-accent text-on-primary font-semibold rounded-lg shadow-sm" data-path="projects" href="#">03. Projects</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="skills" href="#">04. Skills</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="proof-of-work" href="#">05. Proof</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="education" href="#">06. Education</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="achievements" href="#">07. Achievements</a><a class="px-3 py-1.5 rounded-lg text-text-secondary font-mono-label text-mono-label hover:text-text-primary hover:bg-surface transition-all" data-path="contact" href="#">08. Contact</a></nav><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 px-2.5 py-1 rounded-lg bg-surface border border-border"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span><span class="font-mono-meta text-mono-meta text-text-secondary">STATUS: OPEN TO WORK</span></div><a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface border border-border text-text-primary font-mono-label text-mono-label hover:bg-surface-muted hover:border-text-primary transition-all shadow-[1px_1px_0px_rgba(23,23,23,0.06)]" href="#">Resume ↓</a><button aria-label="Toggle Mobile Menu" class="xl:hidden w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center text-text-primary hover:bg-surface-muted transition-colors" id="drawer-toggle"><span class="material-symbols-outlined text-[20px]">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-border shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1Ut7F9abNadabvXPPPkG45QwDM4Rz13pH47E9dY74CjmZpr5vuXBEVukEFreJelhgSC5EjCN4lbOCwC8ugEHpHqjTa0XNCdN-hhgyZL8QttIrZGtxCRercWDPR7lIAm2Vm5KvS1ZoKhJ5C16xYQkkddRvtmVwsw5SwQgfmHcQRX2sRgbjA4bXcXu5vveFd6r-Zv66JwEFz_nQAFUgiVTNByNOwaaTta5BuZF4HxcEpfa_OPIjyfbFVjtZbMPqpA6U3b0plva_Wd"/></div></div><div class="hidden xl:hidden border-t border-border bg-surface px-margin-tablet py-space-md shadow-md" id="mobile-drawer"><div class="flex flex-col gap-2" data-active-classes="bg-accent text-on-primary font-semibold rounded-lg"><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="home" href="#">01. Home</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="about" href="#">02. About</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="projects" href="#">03. Projects</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="skills" href="#">04. Skills</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="proof-of-work" href="#">05. Proof of Work</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="education" href="#">06. Education</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="achievements" href="#">07. Achievements</a><a class="px-3 py-2 rounded-lg text-text-secondary font-mono-label text-mono-label hover:bg-surface-muted transition-colors" data-path="contact" href="#">08. Contact</a></div><div class="mt-4 pt-4 border-t border-border flex flex-col gap-3"><div class="flex items-center gap-2 px-2 py-1 rounded bg-surface-muted border border-border"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span><span class="font-mono-meta text-mono-meta text-text-secondary">STATUS: OPEN TO WORK</span></div><a class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-surface-muted border border-border text-text-primary font-mono-label text-mono-label" href="#">Download Resume ↓</a></div></div></header><main class="relative z-10 w-full pt-16 flex-1 bg-transparent"><div class="flex flex-col w-full">
+<!-- Top Section Anchor & Technical Status Bar -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-8 pb-4">
+<div class="flex flex-wrap items-center justify-between gap-4 py-2 px-3 bg-surface rounded-lg shadow-sm">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-accent animate-pulse"></span>
+<span class="font-mono-meta text-mono-meta text-text-secondary uppercase">
+          INDEX: 03.SELECTED_PROJECTS // REPO_COUNT: 04 // FILTER: ALL_DEPLOYED
+        </span>
+</div>
+<div class="flex items-center gap-4 font-mono-meta text-mono-meta text-text-muted">
+<span class="hidden sm:inline">ARCH: FULLSTACK · AI · ALGO · ANALYTICS</span>
+<span class="text-accent font-semibold">VIEWING_MODE: EDITORIAL_BREAKDOWN</span>
+</div>
+</div>
+</section>
+<!-- Editorial Header -->
+<header class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-8">
+<div class="flex flex-col gap-3">
+<div class="inline-flex items-center gap-2">
+<span class="font-mono-label text-mono-label text-accent uppercase tracking-wider font-semibold">03. SELECTED PROJECTS</span>
+<span class="h-px w-12 bg-accent/40"></span>
+<span class="font-mono-meta text-mono-meta text-text-muted uppercase">SYSTEM ARCHIVE &amp; DEPLOYMENTS</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div>
+<h1 class="font-display-hero text-display-hero text-text-primary tracking-tight font-semibold">
+            Things I've built.
+          </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl mt-2">
+            A curated selection of software systems, AI utilities, and data dashboards engineered with purpose, precision, and verified utility.
+          </p>
+</div>
+<!-- Quick Summary Metrics Bento Pill -->
+<div class="grid grid-cols-3 gap-3 p-3 bg-surface rounded-lg shadow-sm">
+<div class="flex flex-col px-3 py-1">
+<span class="font-mono-meta text-mono-meta text-text-muted">TOTAL_COMMITS</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-text-primary">1,240+</span>
+</div>
+<div class="flex flex-col px-3 py-1 bg-surface-muted/60 rounded">
+<span class="font-mono-meta text-mono-meta text-text-muted">STACKS</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-accent">MERN · Py</span>
+</div>
+<div class="flex flex-col px-3 py-1">
+<span class="font-mono-meta text-mono-meta text-text-muted">PRODUCTION</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-text-primary">100% LIVE</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- PROJECT 01: FACULTY ERP (HERO SHOWCASE) -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-10">
+<article class="relative bg-surface rounded-xl p-6 md:p-10 shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="flex flex-wrap items-center justify-between gap-3 pb-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded bg-primary text-on-primary font-mono-label text-mono-label flex items-center justify-center font-bold">01</span>
+<span class="px-3 py-1 bg-accent/10 text-accent font-mono-meta text-mono-meta rounded font-semibold uppercase tracking-wider">
+            FULL-STACK ENTERPRISE SYSTEM // PRIORITY BUILD
+          </span>
+</div>
+<div class="flex items-center gap-2 font-mono-meta text-mono-meta text-text-muted">
+<span class="w-2 h-2 rounded-full bg-accent"></span>
+<span>ENTERPRISE RELEASE · GTU ACCREDITED</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-2">
+<!-- Project Context & Spec Left Column -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
+              Faculty ERP
+            </h2>
+<p class="font-body-lg text-body-lg text-text-secondary mt-3">
+              A comprehensive academic and faculty enterprise resource planning system streamlining institutional workflows, faculty records, and departmental coordination.
+            </p>
+</div>
+<!-- Technical Problem / Solution Panel -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 bg-surface-muted/70 rounded-lg">
+<span class="font-mono-meta text-mono-meta text-accent uppercase font-semibold flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px]">error_outline</span> THE PROBLEM
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Fragmented manual record-keeping and lack of unified data access across academic departments created administrative bottlenecks and grading delays.
+              </p>
+</div>
+<div class="p-4 bg-surface-muted/70 rounded-lg">
+<span class="font-mono-meta text-mono-meta text-primary font-semibold flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> THE SOLUTION
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Architected an integrated, role-based ERP dashboard with automated attendance, grade management, and departmental workload distribution telemetry.
+              </p>
+</div>
+</div>
+<!-- Stack Tags -->
+<div>
+<span class="font-mono-meta text-mono-meta text-text-muted uppercase block mb-2">SYSTEM TECH STACK:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">React</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">Node.js</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">Express</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">MongoDB</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">Tailwind CSS</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">REST APIs</span>
+</div>
+</div>
+<!-- Action CTA Group -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-accent text-on-primary rounded font-mono-label text-mono-label hover:bg-accent-dark transition-all shadow-sm" href="#">
+<span>View Project Repository</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container text-text-primary rounded font-mono-label text-mono-label hover:bg-surface-container-highest transition-all" href="#">
+<span>Live Demo</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 text-text-secondary font-mono-label text-mono-label hover:text-accent transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>System Architecture Doc</span>
+</button>
+</div>
+</div>
+<!-- High-Fidelity ERP Mockup Card Right Column -->
+<div class="lg:col-span-6 flex flex-col gap-4">
+<div class="bg-surface-muted rounded-xl p-4 shadow-sm">
+<!-- Simulated Browser Header -->
+<div class="flex items-center justify-between pb-3 mb-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-accent/40 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-text-muted/40 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-text-muted/40 inline-block"></span>
+<span class="ml-2 font-mono-meta text-mono-meta text-text-muted">erp.ldce.ac.in/dashboard/faculty</span>
+</div>
+<span class="font-mono-meta text-mono-meta text-accent bg-accent/10 px-2 py-0.5 rounded">ROLE: DEPT_HEAD</span>
+</div>
+<!-- In-App Mockup Visual -->
+<div class="bg-surface rounded-lg p-4 flex flex-col gap-4 shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-semibold">Faculty Workload Matrix</h4>
+<p class="font-mono-meta text-mono-meta text-text-muted">Academic Term: ODD-2025 // CS &amp; ENG</p>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container text-text-secondary font-mono-meta text-mono-meta rounded">Export PDF</span>
+<span class="px-2 py-1 bg-primary text-on-primary font-mono-meta text-mono-meta rounded font-medium">+ Assign Duty</span>
+</div>
+</div>
+<!-- Visual Data Table Mock -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-text-secondary font-mono-meta text-mono-meta uppercase">
+<th class="py-2 px-3">Faculty ID</th>
+<th class="py-2 px-3">Professor Name</th>
+<th class="py-2 px-3">Course / Lab</th>
+<th class="py-2 px-3">Attendance</th>
+<th class="py-2 px-3 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border/40 text-text-primary">
+<tr>
+<td class="py-2.5 px-3 font-mono-meta text-mono-meta">FAC_0109</td>
+<td class="py-2.5 px-3 font-medium">Dr. R. K. Bhatt</td>
+<td class="py-2.5 px-3 text-text-secondary">Distributed Computing</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-accent h-full w-[92%]"></div>
+</div>
+<span class="font-mono-meta text-mono-meta">92%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 bg-surface-muted text-accent font-mono-meta text-mono-meta rounded">ACTIVE</span></td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono-meta text-mono-meta">FAC_0142</td>
+<td class="py-2.5 px-3 font-medium">Prof. M. Soni</td>
+<td class="py-2.5 px-3 text-text-secondary">Machine Learning Lab</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-accent h-full w-[88%]"></div>
+</div>
+<span class="font-mono-meta text-mono-meta">88%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 bg-surface-muted text-text-secondary font-mono-meta text-mono-meta rounded">VERIFIED</span></td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-mono-meta text-mono-meta">FAC_0204</td>
+<td class="py-2.5 px-3 font-medium">Er. Amit Jethva</td>
+<td class="py-2.5 px-3 text-text-secondary">Compiler Design TA</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[96%]"></div>
+</div>
+<span class="font-mono-meta text-mono-meta">96%</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 bg-primary/10 text-primary font-mono-meta text-mono-meta rounded font-medium">ON DUTY</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Mini Data Visualization Bars -->
+<div class="pt-2">
+<div class="flex items-center justify-between text-mono-meta font-mono-meta text-text-muted mb-1">
+<span>FACULTY RECORD WORKLOAD SYNC</span>
+<span>LATENCY: 42ms // REALTIME</span>
+</div>
+<div class="grid grid-cols-6 gap-1.5 h-6">
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-primary w-full h-[65%] rounded-sm"></div></div>
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-primary w-full h-[82%] rounded-sm"></div></div>
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-accent w-full h-[95%] rounded-sm"></div></div>
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-primary w-full h-[74%] rounded-sm"></div></div>
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-primary w-full h-[88%] rounded-sm"></div></div>
+<div class="bg-primary/20 hover:bg-primary transition-colors rounded-sm h-full flex items-end p-0.5"><div class="bg-primary w-full h-[91%] rounded-sm"></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 font-mono-meta text-mono-meta text-text-muted">
+<span>[SPEC: SECURE REST JWT · ROLE-BASED ACCESS]</span>
+<span>BUILD: PROD-V2.1</span>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- PROJECT 02: JARVIS AI ASSISTANT (LARGE VISUAL SHOWCASE) -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-8">
+<article class="relative bg-surface rounded-xl p-6 md:p-10 shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+<div class="flex flex-wrap items-center justify-between gap-3 pb-6">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded bg-primary text-on-primary font-mono-label text-mono-label flex items-center justify-center font-bold">02</span>
+<span class="px-3 py-1 bg-accent/10 text-accent font-mono-meta text-mono-meta rounded font-semibold uppercase tracking-wider">
+            INTELLIGENT AGENT &amp; AUTOMATION
+          </span>
+</div>
+<div class="flex items-center gap-2 font-mono-meta text-mono-meta text-text-muted">
+<span class="w-2 h-2 rounded-full bg-accent animate-ping"></span>
+<span>SYSTEM_DAEMON: ACTIVE</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-2">
+<!-- Visual Terminal Interface Mockup Column -->
+<div class="lg:col-span-6 order-2 lg:order-1 flex flex-col gap-4">
+<div class="bg-inverse-surface rounded-xl p-5 shadow-lg text-surface">
+<!-- Simulated Shell Title Bar -->
+<div class="flex items-center justify-between pb-3 mb-4 border-b border-surface/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-[18px]">graphic_eq</span>
+<span class="font-mono-meta text-mono-meta text-surface/80">jarvis_daemon.py [PORT: 9002]</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-accent/20 text-accent font-mono-meta text-mono-meta">AUDIO: 44.1kHz</span>
+</div>
+<!-- Terminal Output Stream -->
+<div class="font-mono-code text-mono-code space-y-3">
+<div class="text-surface/50 text-mono-meta font-mono-meta">// INITIALIZING SPEECH RECOGNITION PIPELINE...</div>
+<div class="p-3 bg-surface/5 rounded text-surface/90 flex flex-col gap-1">
+<span class="text-accent font-semibold">[VOICE_IN]: "Jarvis, open terminal workspace, checkout branch feature/auth and run test suites."</span>
+<div class="flex items-center gap-1.5 py-1">
+<!-- Audio Waveform Visualization SVG -->
+<svg class="w-full h-8 text-accent" fill="none" viewbox="0 0 280 32">
+<rect fill="currentColor" height="12" opacity="0.4" rx="1.5" width="3" x="10" y="10"></rect>
+<rect fill="currentColor" height="20" opacity="0.6" rx="1.5" width="3" x="20" y="6"></rect>
+<rect fill="currentColor" height="28" rx="1.5" width="3" x="30" y="2"></rect>
+<rect fill="currentColor" height="16" rx="1.5" width="3" x="40" y="8"></rect>
+<rect fill="currentColor" height="8" opacity="0.5" rx="1.5" width="3" x="50" y="12"></rect>
+<rect fill="currentColor" height="24" rx="1.5" width="3" x="60" y="4"></rect>
+<rect fill="currentColor" height="12" rx="1.5" width="3" x="70" y="10"></rect>
+<rect fill="currentColor" height="28" rx="1.5" width="3" x="80" y="2"></rect>
+<rect fill="currentColor" height="18" opacity="0.8" rx="1.5" width="3" x="90" y="7"></rect>
+<rect fill="currentColor" height="8" opacity="0.4" rx="1.5" width="3" x="100" y="12"></rect>
+<rect fill="currentColor" height="22" rx="1.5" width="3" x="110" y="5"></rect>
+<rect fill="currentColor" height="14" rx="1.5" width="3" x="120" y="9"></rect>
+<rect fill="currentColor" height="28" rx="1.5" width="3" x="130" y="2"></rect>
+<rect fill="currentColor" height="10" opacity="0.5" rx="1.5" width="3" x="140" y="11"></rect>
+<rect fill="currentColor" height="20" rx="1.5" width="3" x="150" y="6"></rect>
+<rect fill="currentColor" height="6" opacity="0.4" rx="1.5" width="3" x="160" y="13"></rect>
+<rect fill="currentColor" height="24" rx="1.5" width="3" x="170" y="4"></rect>
+<rect fill="currentColor" height="16" rx="1.5" width="3" x="180" y="8"></rect>
+<rect fill="currentColor" height="28" rx="1.5" width="3" x="190" y="2"></rect>
+<rect fill="currentColor" height="12" opacity="0.7" rx="1.5" width="3" x="200" y="10"></rect>
+<rect fill="currentColor" height="22" rx="1.5" width="3" x="210" y="5"></rect>
+<rect fill="currentColor" height="14" rx="1.5" width="3" x="220" y="9"></rect>
+<rect fill="currentColor" height="4" opacity="0.3" rx="1.5" width="3" x="230" y="14"></rect>
+<rect fill="currentColor" height="18" rx="1.5" width="3" x="240" y="7"></rect>
+<rect fill="currentColor" height="10" opacity="0.5" rx="1.5" width="3" x="250" y="11"></rect>
+<rect fill="currentColor" height="24" rx="1.5" width="3" x="260" y="4"></rect>
+</svg>
+</div>
+<div class="flex items-center justify-between text-mono-meta font-mono-meta text-surface/60">
+<span>CONFIDENCE: 98.4%</span>
+<span>INTENT_MATCH: WORKFLOW_EXECUTE</span>
+</div>
+</div>
+<!-- Execution Trace Subroutines -->
+<div class="space-y-1 text-mono-meta font-mono-meta text-surface/80 pt-1">
+<div class="flex items-center gap-2">
+<span class="text-accent">&gt;</span> [SUBROUTINE_1] Launching iTerm2 Session... <span class="text-accent ml-auto">DONE</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-accent">&gt;</span> [SUBROUTINE_2] git checkout feature/auth... <span class="text-accent ml-auto">OK (HEAD)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-accent">&gt;</span> [SUBROUTINE_3] pytest tests/unit/ -v ... <span class="text-accent ml-auto">PASSED (14/14)</span>
+</div>
+<div class="flex items-center gap-2 text-surface">
+<span class="text-accent">&gt;</span> [TTS_RESPONSE]: "Workspace configured, tests passing. Ready for code."
+                </div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 font-mono-meta text-mono-meta text-text-muted">
+<span>OFFLINE_CAPABLE: LOCAL PYTTSX3 ENGINE</span>
+<span>LATENCY: ~180MS</span>
+</div>
+</div>
+<!-- Project Spec Right Column -->
+<div class="lg:col-span-6 order-1 lg:order-2 flex flex-col gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
+              Jarvis AI Assistant
+            </h2>
+<p class="font-body-lg text-body-lg text-text-secondary mt-3">
+              An automated desktop voice and task assistant integrating natural language processing, system control, and contextual workflow automation.
+            </p>
+</div>
+<!-- Problem / Solution Callouts -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 bg-surface-muted/70 rounded-lg">
+<span class="font-mono-meta text-mono-meta text-accent uppercase font-semibold flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px]">bolt</span> THE PROBLEM
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Repetitive daily engineering workflows, file indexing, and contextual switching disrupt developer concentration and execution velocity.
+              </p>
+</div>
+<div class="p-4 bg-surface-muted/70 rounded-lg">
+<span class="font-mono-meta text-mono-meta text-primary font-semibold flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span> THE SOLUTION
+              </span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Built an intelligent speech-to-intent engine that parses multi-step verbal prompts into automated local scripts, query resolution, and workspace control.
+              </p>
+</div>
+</div>
+<!-- Stack Tags -->
+<div>
+<span class="font-mono-meta text-mono-meta text-text-muted uppercase block mb-2">SYSTEM TECH STACK:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">Python</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">SpeechRecognition</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">Pyttsx3</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">NLP Pipelines</span>
+<span class="px-2.5 py-1 bg-surface-muted text-text-primary font-mono-label text-mono-label rounded">OS Automation</span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-accent text-on-primary rounded font-mono-label text-mono-label hover:bg-accent-dark transition-all shadow-sm" href="#">
+<span>GitHub Repository</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container text-text-primary rounded font-mono-label text-mono-label hover:bg-surface-container-highest transition-all" href="#">
+<span>CLI Demo</span>
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- SPLIT ASYMMETRIC GRID: PROJECTS 03 & 04 -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-8 mb-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- PROJECT 03: DSA REPOSITORY (Col span 6) -->
+<article class="lg:col-span-6 bg-surface rounded-xl p-6 md:p-8 shadow-md flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
+<div>
+<div class="flex items-center justify-between gap-3 pb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded bg-primary text-on-primary font-mono-label text-mono-label flex items-center justify-center font-bold">03</span>
+<span class="px-2.5 py-0.5 bg-accent/10 text-accent font-mono-meta text-mono-meta rounded font-semibold uppercase">
+                ALGORITHMS &amp; DATA STRUCTURES
+              </span>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">400+ PROBLEMS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary font-semibold mt-2">
+            DSA Repository
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary mt-2">
+            A systematic, rigorously documented archive of clean algorithmic solutions and performance-optimized data structure implementations.
+          </p>
+<!-- Problem & Solution Micro-Grids -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-5">
+<div class="p-3 bg-surface-muted/60 rounded">
+<span class="font-mono-meta text-mono-meta text-text-muted block font-semibold mb-1">CHALLENGE:</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Navigating complex edge cases and mastering time-space trade-offs across competitive programming challenges.
+              </p>
+</div>
+<div class="p-3 bg-surface-muted/60 rounded">
+<span class="font-mono-meta text-mono-meta text-accent block font-semibold mb-1">APPROACH:</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Organized implementations indexed by paradigm (DP, Graphs, Trees) with verified complexity analysis.
+              </p>
+</div>
+</div>
+<!-- Algorithmic Snippet & Complexity Badge Visual -->
+<div class="bg-surface-muted rounded-lg p-4 font-mono-code text-mono-code mb-5 shadow-inner">
+<div class="flex items-center justify-between text-mono-meta font-mono-meta text-text-muted pb-2 mb-2 border-b border-border">
+<span>SegmentTree_RangeQuery.cpp</span>
+<span class="px-2 py-0.5 bg-accent text-on-primary rounded font-semibold">O(log N) QUERY</span>
+</div>
+<pre class="text-text-primary text-[12px] leading-relaxed overflow-x-auto"><code>void update(int node, int start, int end, int idx, int val) {
+    if(start == end) { tree[node] += val; return; }
+    int mid = start + (end - start)/2;
+    if(idx &lt;= mid) update(2*node, start, mid, idx, val);
+    else update(2*node+1, mid+1, end, idx, val);
+    tree[node] = tree[2*node] + tree[2*node+1];
+}</code></pre>
+<div class="flex items-center justify-between pt-2 mt-2 border-t border-border text-mono-meta font-mono-meta text-text-secondary">
+<span>SPACE: O(4N) OPTIMIZED</span>
+<span class="text-primary">LEETCODE: TOP 20%</span>
+</div>
+</div>
+<!-- Technologies -->
+<div class="mb-5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">C++</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Python</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Data Structures</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Algorithms</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">LeetCode Patterns</span>
+</div>
+</div>
+</div>
+<div class="pt-3">
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container text-text-primary rounded font-mono-label text-mono-label hover:bg-surface-container-highest transition-all shadow-sm" href="#">
+<span>GitHub Repository</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 04: SMARSHOP ANALYTICS DASHBOARD (Col span 6) -->
+<article class="lg:col-span-6 bg-surface rounded-xl p-6 md:p-8 shadow-md flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
+<div>
+<div class="flex items-center justify-between gap-3 pb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded bg-primary text-on-primary font-mono-label text-mono-label flex items-center justify-center font-bold">04</span>
+<span class="px-2.5 py-0.5 bg-accent/10 text-accent font-mono-meta text-mono-meta rounded font-semibold uppercase">
+                DATA ANALYTICS DASHBOARD
+              </span>
+</div>
+<span class="font-mono-meta text-mono-meta text-text-muted">REAL-TIME TELEMETRY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary font-semibold mt-2">
+            SmarShop Analytics Dashboard
+          </h3>
+<p class="font-body-md text-body-md text-text-secondary mt-2">
+            An interactive data analytics platform providing actionable insights into retail sales trends, inventory turnover, and customer purchasing patterns.
+          </p>
+<!-- Problem & Solution Micro-Grids -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-5">
+<div class="p-3 bg-surface-muted/60 rounded">
+<span class="font-mono-meta text-mono-meta text-text-muted block font-semibold mb-1">CHALLENGE:</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                E-commerce retailers struggle to extract fast trend signals from high-volume dispersed transaction records.
+              </p>
+</div>
+<div class="p-3 bg-surface-muted/60 rounded">
+<span class="font-mono-meta text-mono-meta text-accent block font-semibold mb-1">APPROACH:</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Real-time aggregation pipelines and interactive visual telemetry to pinpoint high-margin sales velocity.
+              </p>
+</div>
+</div>
+<!-- Visual Analytics Panel SVG Mockup -->
+<div class="bg-surface-muted rounded-lg p-4 font-mono-code text-mono-code mb-5 shadow-inner">
+<div class="flex items-center justify-between text-mono-meta font-mono-meta text-text-muted pb-2 mb-2 border-b border-border">
+<span>KPI: REVENUE CONVERSION // Q1 AGGREGATE</span>
+<span class="text-accent font-semibold">+23.8% MoM</span>
+</div>
+<!-- Inline SVG Telemetry Sparklines -->
+<div class="py-2">
+<svg class="w-full h-20 text-accent" fill="none" viewbox="0 0 320 80">
+<path d="M0 65 Q 40 55, 80 40 T 160 30 T 240 15 T 320 8" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<path d="M0 65 Q 40 55, 80 40 T 160 30 T 240 15 T 320 8 L 320 80 L 0 80 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="80" cy="40" fill="currentColor" r="3.5"></circle>
+<circle cx="160" cy="30" fill="currentColor" r="3.5"></circle>
+<circle cx="240" cy="15" fill="currentColor" r="3.5"></circle>
+<circle cx="320" cy="8" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<!-- Mini Summary Metrics -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-border text-mono-meta font-mono-meta">
+<div>
+<span class="text-text-muted block">ORDERS</span>
+<span class="text-text-primary font-bold">14,289</span>
+</div>
+<div>
+<span class="text-text-muted block">AOV</span>
+<span class="text-text-primary font-bold">$84.20</span>
+</div>
+<div class="text-right">
+<span class="text-text-muted block">TURNOVER</span>
+<span class="text-accent font-bold">3.8x</span>
+</div>
+</div>
+</div>
+<!-- Technologies -->
+<div class="mb-5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Python</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Pandas</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">NumPy</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Matplotlib</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Seaborn</span>
+<span class="px-2 py-0.5 bg-surface-container text-text-secondary font-mono-label text-mono-label rounded">Streamlit / Web UI</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-3">
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-accent text-on-primary rounded font-mono-label text-mono-label hover:bg-accent-dark transition-all shadow-sm" href="#">
+<span>Interactive Dashboard</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-surface-container text-text-primary rounded font-mono-label text-mono-label hover:bg-surface-container-highest transition-all" href="#">
+<span>GitHub Repository</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Technical Process & Methodology Terminal Callout -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-8">
+<div class="bg-surface rounded-xl p-6 md:p-8 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-muted flex items-center justify-center text-accent">
+<span class="material-symbols-outlined text-[24px]">developer_mode</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-semibold">
+            Looking for code architecture or test suites?
+          </h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+            All repositories include Docker configurations, automated GitHub Actions pipelines, and complete schema documentation.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto justify-end">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 bg-surface-muted text-text-primary rounded font-mono-label text-mono-label hover:bg-surface-container-highest transition-all shadow-sm" href="#">
+<span>Explore GitHub Profile</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for hover highlights and dynamic status inspection
+  document.querySelectorAll('article').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('translate-y-[-2px]');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('translate-y-[-2px]');
+    });
+  });
+</script></main><footer class="relative z-10 w-full bg-surface border-t border-border mt-space-xl"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg pb-space-lg border-b border-border"><div class="md:col-span-4 flex flex-col gap-2"><div class="flex items-center gap-3"><span class="w-7 h-7 rounded bg-surface-muted border border-border flex items-center justify-center font-mono-label text-mono-label text-accent font-semibold">AJ</span><span class="font-headline-sm text-headline-sm text-text-primary">Amit Jethva</span></div><p class="font-mono-meta text-mono-meta text-text-muted mt-1">Computer Engineering · L.D.C.E. Ahmedabad</p><p class="font-body-sm text-body-sm text-text-secondary mt-2">Technical workbench, experimental prototypes, and systems engineering log.</p></div><div class="md:col-span-4 flex flex-col justify-center items-start md:items-center text-left md:text-center"><span class="font-mono-meta text-mono-meta text-text-muted mb-1">[SYS_STATUS // V2.6.4]</span><p class="font-body-md text-body-md text-text-secondary italic">"Built with passion. Always a work in progress."</p></div><div class="md:col-span-4 flex flex-col md:items-end gap-3"><span class="font-mono-meta text-mono-meta text-text-muted uppercase tracking-wider">Navigation Index</span><div class="grid grid-cols-2 gap-x-6 gap-y-1.5 text-left md:text-right" data-active-classes="text-accent font-semibold"><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="home" href="#">01. Home</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="about" href="#">02. About</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="projects" href="#">03. Projects</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="skills" href="#">04. Skills</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="proof-of-work" href="#">05. Proof</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="education" href="#">06. Education</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="achievements" href="#">07. Achievements</a><a class="font-mono-label text-mono-label text-text-secondary hover:text-accent transition-colors" data-path="contact" href="#">08. Contact</a></div><a class="inline-flex items-center gap-1 font-mono-label text-mono-label text-accent hover:underline mt-2" href="#">↑ Back to top</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-meta text-mono-meta text-text-muted"><div>© 2026 Amit Jethva. All rights reserved.</div><div class="flex items-center gap-4"><span>LAT: 23.0338° N</span><span>LON: 72.5463° E</span><span>REF: 48PX_GRID</span></div></div></div></footer><script>const toggle = document.getElementById('drawer-toggle'); const drawer = document.getElementById('mobile-drawer'); if(toggle && drawer){ toggle.addEventListener('click', () => { drawer.classList.toggle('hidden'); }); }</script></body></html>
