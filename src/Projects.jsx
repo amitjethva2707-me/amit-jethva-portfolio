@@ -29,9 +29,9 @@ const Projects = () => {
 </div>
 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
 <div>
-<h1 className="font-display-hero text-display-hero text-text-primary tracking-tight font-semibold">
-            Things I've built.
-          </h1>
+<h2 className="font-display-hero text-display-hero text-text-primary tracking-tight font-semibold">
+            Projects: Things I've built.
+          </h2>
 <p className="font-body-lg text-body-lg text-text-secondary max-w-2xl mt-2">
             A curated selection of software systems, AI utilities, and data dashboards engineered with purpose, precision, and verified utility.
           </p>
@@ -73,9 +73,9 @@ const Projects = () => {
 {/*  Project Context & Spec Left Column  */}
 <div className="lg:col-span-6 flex flex-col gap-6">
 <div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
+<h3 className="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
               Faculty ERP
-            </h2>
+            </h3>
 <p className="font-body-lg text-body-lg text-text-secondary mt-3">
               A comprehensive academic and faculty enterprise resource planning system streamlining institutional workflows, faculty records, and departmental coordination.
             </p>
@@ -269,7 +269,7 @@ const Projects = () => {
 <span className="text-accent font-semibold">[VOICE_IN]: "Jarvis, open terminal workspace, checkout branch feature/auth and run test suites."</span>
 <div className="flex items-center gap-1.5 py-1">
 {/*  Audio Waveform Visualization SVG  */}
-<svg className="w-full h-8 text-accent" fill="none" viewBox="0 0 280 32">
+<svg className="w-full h-8 text-accent" fill="none" viewBox="0 0 280 32" aria-hidden="true">
 <rect fill="currentColor" height="12" opacity="0.4" rx="1.5" width="3" x="10" y="10" />
 <rect fill="currentColor" height="20" opacity="0.6" rx="1.5" width="3" x="20" y="6" />
 <rect fill="currentColor" height="28" rx="1.5" width="3" x="30" y="2" />
@@ -328,9 +328,9 @@ const Projects = () => {
 {/*  Project Spec Right Column  */}
 <div className="lg:col-span-6 order-1 lg:order-2 flex flex-col gap-6">
 <div>
-<h2 className="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
+<h3 className="font-headline-lg text-headline-lg text-text-primary font-semibold tracking-tight">
               Jarvis AI Assistant
-            </h2>
+            </h3>
 <p className="font-body-lg text-body-lg text-text-secondary mt-3">
               An automated desktop voice and task assistant integrating natural language processing, system control, and contextual workflow automation.
             </p>
@@ -489,7 +489,7 @@ const Projects = () => {
 </div>
 {/*  Inline SVG Telemetry Sparklines  */}
 <div className="py-2">
-<svg className="w-full h-20 text-accent" fill="none" viewBox="0 0 320 80">
+<svg className="w-full h-20 text-accent" fill="none" viewBox="0 0 320 80" aria-hidden="true">
 <path d="M0 65 Q 40 55, 80 40 T 160 30 T 240 15 T 320 8" fill="none" stroke="currentColor" strokeWidth="2.5" />
 <path d="M0 65 Q 40 55, 80 40 T 160 30 T 240 15 T 320 8 L 320 80 L 0 80 Z" fill="currentColor" fill-opacity="0.08" />
 <circle cx="80" cy="40" fill="currentColor" r="3.5" />

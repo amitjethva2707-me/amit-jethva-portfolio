@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amit-jethva-portfolio.vercel.app/sitemap.xml

@@ -17,9 +17,9 @@ function About() {
             // PHILOSOPHY, MINDSET &amp; BACKGROUND · L.D.C.E.
           </span>
 </div>
-<h1 className="font-display-hero text-display-hero tracking-tight text-text-primary">
-          More than just <span className="text-accent underline decoration-accent/30 underline-offset-8">code.</span>
-</h1>
+<h2 className="font-display-hero text-display-hero tracking-tight text-text-primary">
+          About Me: More than just <span className="text-accent underline decoration-accent/30 underline-offset-8">code.</span>
+</h2>
 </div>
 <div className="flex items-center gap-4 bg-surface-muted/70 p-3 rounded-xl shadow-sm">
 <div className="flex flex-col">
@@ -46,7 +46,7 @@ function About() {
             [NARRATIVE_LOG // STATEMENT_01]
           </div>
 <p className="font-body-lg text-body-lg text-text-primary leading-relaxed font-medium mb-4">
-            I'm a Computer Engineering student at L.D. College of Engineering, passionate about machine learning, data, web technologies, software development, and practical problem solving.
+            I am Amit Jethva, a Computer Engineering student at L.D. College of Engineering, passionate about machine learning, data, web technologies, software development, programming, and practical problem solving.
           </p>
 <p className="font-body-md text-body-md text-text-secondary leading-relaxed mb-6">
             I enjoy turning complex technical concepts into real-world applications and continuously learning new paradigms. Rather than chasing superficial hype, my focus is on robust software engineering, scalable architectures, and applied intelligent systems.
@@ -109,7 +109,7 @@ function About() {
 </div>
 {/*  Image Preview Container with Overlays  */}
 <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-surface-muted">
-<img className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Minimalist modern engineering workbench setup with an open laptop showing terminal scripts and Python code, a steaming ceramic coffee mug, notebook with annotations 'Ideas to Impact', soft neutral studio lighting, warm off-white and charcoal tones with subtle terracotta accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe18b6Z-yzjy0SFpg0ZzIBAuFu80Bl_pZ4HDlo-1wIpZ5ROw8OSQcBevLbu35Ya8vMSrh4vUZCaKNJ0lE6X7cEicihwzYj3ozKwNdHcCEez8S4m-pGHWj9XKczVxR_ChWCFjZ9KxqYqDE8lAj1xmEccZ97EUBZCb2HswTAqG_Isgqanyo9WSiFggeAsXA4w3PickdwhyEhZkMAG6mAs04AquKQ_5T6blrdhgPkD-JeoqPzrSYtWHXm"/>
+<img className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" alt="Minimalist modern engineering workbench setup" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe18b6Z-yzjy0SFpg0ZzIBAuFu80Bl_pZ4HDlo-1wIpZ5ROw8OSQcBevLbu35Ya8vMSrh4vUZCaKNJ0lE6X7cEicihwzYj3ozKwNdHcCEez8S4m-pGHWj9XKczVxR_ChWCFjZ9KxqYqDE8lAj1xmEccZ97EUBZCb2HswTAqG_Isgqanyo9WSiFggeAsXA4w3PickdwhyEhZkMAG6mAs04AquKQ_5T6blrdhgPkD-JeoqPzrSYtWHXm"/>
 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-5 text-on-primary">
 <div className="flex items-center justify-between">
 <div>

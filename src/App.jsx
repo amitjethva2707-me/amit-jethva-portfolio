@@ -62,7 +62,7 @@ function App() {
             >
               <span className="material-symbols-outlined text-[20px]">menu</span>
             </button>
-            <img alt="Profile" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border border-border shadow-sm" src="/images/profile.png" />
+            <img alt="Amit Jethva - Profile" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border border-border shadow-sm" src="/images/profile.png" />
           </div>
         </div>
         

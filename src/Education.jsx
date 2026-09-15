@@ -47,9 +47,9 @@ const Education = () => {
               <span className="font-mono-meta text-mono-meta text-accent px-2 py-0.5 rounded bg-surface-muted border border-border">06. EDUCATION</span>
               <span className="font-mono-meta text-mono-meta text-text-muted">// FORMAL ACADEMIC JOURNEY & FOUNDATIONAL TRAINING</span>
             </div>
-            <h1 className="font-headline-lg text-headline-lg md:text-display-hero text-text-primary tracking-tight">
-              Learning. Growing. <span className="text-accent">Applying.</span>
-            </h1>
+            <h2 className="font-headline-lg text-headline-lg md:text-display-hero text-text-primary tracking-tight">
+              Education: Learning. Growing. <span className="text-accent">Applying.</span>
+            </h2>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface border border-border shadow-sm">
@@ -77,7 +77,7 @@ const Education = () => {
               </div>
               <div className="mt-space-md flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                 <div>
-                  <h2 className="font-headline-md text-headline-md text-text-primary">Bachelor of Engineering (BE)</h2>
+                  <h3 className="font-headline-md text-headline-md text-text-primary">Bachelor of Engineering (BE)</h3>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="font-headline-sm text-headline-sm text-accent font-medium">Computer Engineering</span>
                     <span className="text-text-muted font-mono-meta">/</span>
@@ -197,7 +197,7 @@ const Education = () => {
                 <span className="font-mono-meta text-mono-meta text-text-secondary">EST. 1948</span>
               </div>
               <div className="relative w-full h-44 rounded-lg overflow-hidden border border-border mb-space-md group">
-                <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Architectural photograph of L.D. College of Engineering campus in Ahmedabad featuring classic red-brick engineering academic blocks surrounded by greenery under clean daylight in architectural technical style with terracotta undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnn5gzaOIrmmtvOdYcXraCg6dkpQyKo4IAsG-jW0phya1pbYqdi689y0TfxniJUuNarfWC4hwrp_EZjso45h5NdS5QFePTTHyRhNAadYAzd6rUFFcWoZ4ojsUkEd9V0tRRvEh2PhCVURI5l9g-Xg5k1UTa-Gp4PempfNvmDdhwHsPpH7SUdl8nmUHAfEa0U6bEWMmha5vXv2KAYGxezL7f4pfIoV4o8ytwqS9HXrDfcv74Z8lk6rJh"/>
+                <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="L.D. College of Engineering campus in Ahmedabad" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnn5gzaOIrmmtvOdYcXraCg6dkpQyKo4IAsG-jW0phya1pbYqdi689y0TfxniJUuNarfWC4hwrp_EZjso45h5NdS5QFePTTHyRhNAadYAzd6rUFFcWoZ4ojsUkEd9V0tRRvEh2PhCVURI5l9g-Xg5k1UTa-Gp4PempfNvmDdhwHsPpH7SUdl8nmUHAfEa0U6bEWMmha5vXv2KAYGxezL7f4pfIoV4o8ytwqS9HXrDfcv74Z8lk6rJh"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-3">
                   <div className="flex items-center justify-between w-full">
                     <span className="font-mono-label text-mono-label text-on-primary font-medium">L.D.C.E. Campus Hub</span>

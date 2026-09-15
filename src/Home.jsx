@@ -135,7 +135,7 @@ function Home() {
                   {/* Right: Portrait */}
                   <div className="group relative z-10 shrink-0 w-36 sm:w-44 lg:w-48 aspect-[3/4] rounded-lg border border-border/60 overflow-hidden bg-surface-muted shadow-sm ring-1 ring-black/5 transition-all duration-[350ms] ease-out hover:-translate-y-1 hover:shadow-md hover:border-text-secondary/30 hover:ring-black/10 motion-reduce:transition-none motion-reduce:hover:transform-none">
                     <img 
-                      alt="Amit Jethva Portrait" 
+                      alt="Amit Jethva" 
                       className="w-full h-full object-cover object-center transition-transform duration-[350ms] ease-out group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:transform-none" 
                       src="/images/profile.png?v=4" 
                     />

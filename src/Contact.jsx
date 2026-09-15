@@ -97,9 +97,9 @@ function Contact() {
               </span>
               <span className="font-mono-meta text-mono-meta text-text-muted">// INBOX DISPATCH · AHMEDABAD, GUJARAT, INDIA</span>
             </div>
-            <h1 className="font-headline-lg text-headline-lg md:text-[48px] md:leading-[56px] text-text-primary tracking-tight">
-              Let's build something <span className="text-accent underline decoration-border decoration-2 underline-offset-8">great</span>.
-            </h1>
+            <h2 className="font-headline-lg text-headline-lg md:text-[48px] md:leading-[56px] text-text-primary tracking-tight">
+              Contact: Let's build something <span className="text-accent underline decoration-border decoration-2 underline-offset-8">great</span>.
+            </h2>
           </div>
           <div className="flex flex-col md:items-end text-left md:text-right font-mono-meta text-mono-meta text-text-muted">
             <span className="inline-flex items-center gap-1.5 text-text-primary font-mono-label text-mono-label">
@@ -230,7 +230,8 @@ function Contact() {
             <div className="relative bg-surface rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
               <div className="sm:w-5/12 h-48 sm:h-auto relative">
                 <img 
-                  alt="Engineering notebook" 
+                  alt="" 
+                  loading="lazy"
                   className="w-full h-full object-cover" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwbHGvHIbEZkzfXhYZIRvEigdnINn6oGBgz6oEUG_VTU_CuHBItUqTDsiKaFhEX_b1Q5H5guqrql0Vaz1a2t5l-qM-XHIr8Yt9Z_DtsV19etEn5WE5FXHEXngfDD8If2fDf6vJjP-6A97AahLKjxkYALuJ5i-9otNLgooIqvwddZGB4walKNi2tN37ACjRBAvJGLr6ZTMwH4Bl9n_I7QqZv9CQ4kNH1ysLDnFCX962ZxHh9gE7U9YV"
                 />
@@ -270,9 +271,9 @@ function Contact() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <h2 className="font-headline-md text-headline-md text-text-primary">
+                <h3 className="font-headline-md text-headline-md text-text-primary">
                   Transmit a Message
-                </h2>
+                </h3>
                 <p className="font-body-sm text-body-sm text-text-secondary">
                   Fill in the parameters below. Messages are routed directly to Amit Jethva's workspace dashboard with high priority indexing.
                 </p>

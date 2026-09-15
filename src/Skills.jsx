@@ -33,9 +33,9 @@ function Skills() {
               <span className="material-symbols-outlined text-[14px] text-accent">terminal</span>
               <span>SYSTEM_CAPABILITIES_MANIFEST</span>
             </div>
-            <h1 className="font-display-hero text-display-hero-mobile md:text-display-hero text-text-primary tracking-tight leading-none">
-              Technologies &amp; Tools
-            </h1>
+            <h2 className="font-display-hero text-display-hero-mobile md:text-display-hero text-text-primary tracking-tight leading-none">
+              Skills: Technologies &amp; Tools
+            </h2>
             <p className="font-body-lg text-body-lg text-text-secondary mt-3">
               A verified inventory of programming libraries, data analytics tools, and core focus areas.
             </p>
@@ -90,7 +90,7 @@ function Skills() {
               <span className="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">
                 01
               </span>
-              <h2 className="font-headline-md text-headline-md text-text-primary">Verified Skills</h2>
+              <h3 className="font-headline-md text-headline-md text-text-primary">Verified Skills</h3>
             </div>
             <span className="font-mono-meta text-mono-meta text-text-muted">
               STATISTICAL MODELING, FEATURE EXTRACTION &amp; EDA
@@ -162,7 +162,7 @@ function Skills() {
               <span className="font-mono-label text-mono-label px-2 py-0.5 rounded bg-surface-muted border border-border text-text-secondary font-semibold">
                 02
               </span>
-              <h2 className="font-headline-md text-headline-md text-text-primary">Main Focus Areas</h2>
+              <h3 className="font-headline-md text-headline-md text-text-primary">Main Focus Areas</h3>
             </div>
             <span className="font-mono-meta text-mono-meta text-text-muted">
               CORE DOMAINS &amp; EXPERTISE
