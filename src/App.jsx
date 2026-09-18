@@ -69,13 +69,13 @@ function App() {
         {isDrawerOpen && (
           <div className="xl:hidden border-t border-border bg-surface px-margin-tablet py-space-md shadow-md">
             <div className="flex flex-col gap-2">
-              <Link aria-current={location.pathname === '/' ? 'page' : undefined} className={getMobileClass('/')} to="/">01. Home</Link>
-              <Link aria-current={location.pathname === '/about' ? 'page' : undefined} className={getMobileClass('/about')} to="/about">02. About</Link>
-              <Link aria-current={location.pathname === '/projects' ? 'page' : undefined} className={getMobileClass('/projects')} to="/projects">03. Projects</Link>
-              <Link aria-current={location.pathname === '/skills' ? 'page' : undefined} className={getMobileClass('/skills')} to="/skills">04. Skills</Link>
-              <Link aria-current={location.pathname === '/proof' ? 'page' : undefined} className={getMobileClass('/proof')} to="/proof">05. Proof of Work</Link>
-              <Link aria-current={location.pathname === '/education' ? 'page' : undefined} className={getMobileClass('/education')} to="/education">06. Education</Link>
-              <Link aria-current={location.pathname === '/contact' ? 'page' : undefined} className={getMobileClass('/contact')} to="/contact">07. Contact</Link>
+              <Link aria-current={location.pathname === '/' ? 'page' : undefined} className={getMobileClass('/')} to="/" onClick={() => setIsDrawerOpen(false)}>01. Home</Link>
+              <Link aria-current={location.pathname === '/about' ? 'page' : undefined} className={getMobileClass('/about')} to="/about" onClick={() => setIsDrawerOpen(false)}>02. About</Link>
+              <Link aria-current={location.pathname === '/projects' ? 'page' : undefined} className={getMobileClass('/projects')} to="/projects" onClick={() => setIsDrawerOpen(false)}>03. Projects</Link>
+              <Link aria-current={location.pathname === '/skills' ? 'page' : undefined} className={getMobileClass('/skills')} to="/skills" onClick={() => setIsDrawerOpen(false)}>04. Skills</Link>
+              <Link aria-current={location.pathname === '/proof' ? 'page' : undefined} className={getMobileClass('/proof')} to="/proof" onClick={() => setIsDrawerOpen(false)}>05. Proof of Work</Link>
+              <Link aria-current={location.pathname === '/education' ? 'page' : undefined} className={getMobileClass('/education')} to="/education" onClick={() => setIsDrawerOpen(false)}>06. Education</Link>
+              <Link aria-current={location.pathname === '/contact' ? 'page' : undefined} className={getMobileClass('/contact')} to="/contact" onClick={() => setIsDrawerOpen(false)}>07. Contact</Link>
             </div>
             <div className="mt-4 pt-4 border-t border-border flex flex-col gap-3">
               <div className="flex items-center gap-2 px-2 py-1 rounded bg-surface-muted border border-border">
